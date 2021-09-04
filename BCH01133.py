@@ -161,7 +161,7 @@ try:
                 sys.stdout.write("\033[1;32mVisit " + url)
                 sys.stdout.flush()
              
-                webbrowser.open_new( url )
+                os.system("termux-open-url \""+url+"\"")
 
             
                 id = posts.messages[0].id
