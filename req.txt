@@ -3,3 +3,8 @@ rsa
 requests
 bs4
 keyboard
+webbrowser
+json
+re
+sys
+os
