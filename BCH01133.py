@@ -66,8 +66,8 @@ ua = {
 }
 
 
-api_id = 1985004760
-api_hash = "AAEvyh8rvr01QjAg0tHULImvpVVTK3oHk"
+api_id = 717425
+api_hash = "322526d2c3350b1d3530de327cf08c07"
 phone_number = sys.argv[1]
 
 client = TelegramClient("session/" + phone_number, api_id, api_hash)
