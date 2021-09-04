@@ -15,7 +15,7 @@ Steps to start mining
  
  pkg install python git 
  
- git clone https://github.com/Adams25g/Bch_Mining
+ git clone https://github.com/Adams25g/miningbch
  
  cd Bch_mining
  
@@ -28,9 +28,10 @@ Steps to start mining
  Then the system will ask you to enter the password which you will receive from telegram on messager or may be as sms to your phone 
  
  done 
- 
+ --------------------------------------------------------------------------
  
  Withdraw method : 
+ --------------------------------------------------
  
  you can follow you balance on the mining bot screen 
  or from your telegram messanger at @Bch_clickbot  
