@@ -17,7 +17,7 @@ Steps to start mining
  
  git clone https://github.com/Adams25g/miningbch
  
- cd Bch_mining
+ cd miningbch
  
  pip install --upgrade pip
  
