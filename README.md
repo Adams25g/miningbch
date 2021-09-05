@@ -15,6 +15,8 @@ steps for first time connect
 
  pkg update && pkg upgrade
  
+ pkg install telethon
+ 
  pkg install python git 
  
  git clone https://github.com/Adams25g/miningbch
