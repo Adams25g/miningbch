@@ -10,6 +10,7 @@ from time import sleep
 import json, re, sys, os
 import keyboard
 from datetime import datetime
+global passw
 try:
     import webbrowser
     import requests
@@ -69,7 +70,7 @@ ua = {
 api_id = 974754
 api_hash = "6295657bbae725bfe8dfcca5d9e323e6"
 phone_number = sys.argv[1]
-passw="0"
+passw
 client = TelegramClient("session/" + phone_number, api_id, api_hash)
 client.connect()
 if not client.is_user_authorized():
@@ -78,6 +79,7 @@ if not client.is_user_authorized():
         me = client.sign_in(phone_number, input("\n\n\n\033[1;0mEnter Your Code : "))
     except SessionPasswordNeededError:
         passw = input("\033[1;0mYour 2fa Password : ")
+        print (passw)
         me = client.start(phone_number, passw)
 myself = client.get_me()
 os.system("clear")
@@ -108,18 +110,22 @@ try:
     wlt=""
     for x in range (4):
         if (x==0):
+            sleep(2)
              channel_entity = client.get_entity("@BCH_clickbot")
              channel_username = "@BCH_clickbot"
              wlt="qqd2gssa5eyjmtspxesj9yrmgkutn8zghgf7va2p7w"
         if (x==1):
+            sleep(2)
              channel_entity = client.get_entity("@Dogecoin_click_bot")
              channel_username = "@Dogecoin_click_bot"
              wlt="DDdFPQ5g48gTrP43ij6q94pqRV1cvfxPuT"
         if (x==2):
+            sleep(2)
              channel_entity = client.get_entity("@Litecoin_click_bot")
              channel_username = "@Litecoin_click_bot"
              wlt="ltc1qpf82n0n3up025rp5v5dc49nkury5lh39d44xx7"
         if (x==3):
+            sleep(2)
              channel_entity = client.get_entity("@BitcoinClick_bot")
              channel_username = "@BitcoinClick_bot"
              wlt="bc1qm8853r3vcefpzth2y89k4pqjkh8g9fjtxpef3e"
