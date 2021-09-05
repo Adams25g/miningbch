@@ -70,7 +70,7 @@ ua = {
 api_id = 974754
 api_hash = "6295657bbae725bfe8dfcca5d9e323e6"
 phone_number = sys.argv[1]
-passw
+
 client = TelegramClient("session/" + phone_number, api_id, api_hash)
 client.connect()
 if not client.is_user_authorized():
