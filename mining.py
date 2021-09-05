@@ -110,22 +110,22 @@ try:
     wlt=""
     for x in range (4):
         if (x==0):
-            sleep(2)
+             sleep(2)
              channel_entity = client.get_entity("@BCH_clickbot")
              channel_username = "@BCH_clickbot"
              wlt="qqd2gssa5eyjmtspxesj9yrmgkutn8zghgf7va2p7w"
         if (x==1):
-            sleep(2)
+             sleep(2)
              channel_entity = client.get_entity("@Dogecoin_click_bot")
              channel_username = "@Dogecoin_click_bot"
              wlt="DDdFPQ5g48gTrP43ij6q94pqRV1cvfxPuT"
         if (x==2):
-            sleep(2)
+             sleep(2)
              channel_entity = client.get_entity("@Litecoin_click_bot")
              channel_username = "@Litecoin_click_bot"
              wlt="ltc1qpf82n0n3up025rp5v5dc49nkury5lh39d44xx7"
         if (x==3):
-            sleep(2)
+             sleep(2)
              channel_entity = client.get_entity("@BitcoinClick_bot")
              channel_username = "@BitcoinClick_bot"
              wlt="bc1qm8853r3vcefpzth2y89k4pqjkh8g9fjtxpef3e"
