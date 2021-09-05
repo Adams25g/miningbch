@@ -23,6 +23,8 @@ Steps to start mining
  
  pip install -r req.txt
  
+ All the above code are only for one time ,,, when you connect again you will use only the coming last code 
+ 
  python mining.py +00000000000000            << enter you telegram phone number start by + ( example : python mining.py +201122934334 )
  
  Then the system will ask you to enter the password which you will receive from telegram on messager or may be as sms to your phone 
