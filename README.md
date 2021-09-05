@@ -14,7 +14,9 @@ steps for first time connect
 (3) open Termux app and copy paste the following codes : 
 
  pkg update && pkg upgrade
- 
+
+ apt update
+
  pkg install telethon
  
  pkg install python git 
